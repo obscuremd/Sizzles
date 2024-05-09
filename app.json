@@ -4,10 +4,10 @@
     "slug": "Sizzles",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/sizzles.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/sizzles.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +19,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/sizzles.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.obscuremd.Sizzles"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/sizzles.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8084cfe8-fdbc-4669-bab5-a4987aeb9e0b"
+      }
     }
   }
 }
