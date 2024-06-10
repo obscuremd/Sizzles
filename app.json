@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Sizzles",
-    "slug": "Sizzles",
+    "slug": "sizzles",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/sizzles.png",
@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.obscuremd.Sizzles"
     },
     "android": {
       "adaptiveIcon": {
@@ -32,8 +33,9 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "8084cfe8-fdbc-4669-bab5-a4987aeb9e0b"
+        "projectId": "79e8fb37-56a2-4ca5-95bc-8345451fb1eb"
       }
-    }
+    },
+    "owner": "obscuremd"
   }
 }

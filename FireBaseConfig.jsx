@@ -1,19 +1,34 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getAnalytics } from "firebase/analytics";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import { EXPO_FIREBASE_KEY } from '@env'
+import { EXPO_FIREBASE_DOMAIN } from '@env'
+import { EXPO_FIREBASE_ID } from '@env'
+import { EXPO_FIREBASE_BUCKET } from '@env'
+import { EXPO_FIREBASE_SENDERID } from '@env'
+import { EXPO_FIREBASE_APPID } from '@env'
+import { EXPO_FIREBASE_MEASUREMENTID } from '@env'
+
+
+
+// const key = import.meta.env.VITE_FIREBASE_KEY;
+// const domain = import.meta.env.VITE_FIREBASE_DOMAIN;
+// const id = import.meta.env.VITE_FIREBASE_ID;
+// const bucket = import.meta.env.VITE_FIREBASE_BUCKET;
+// const senderId = import.meta.env.VITE_FIREBASE_SENDERID;
+// const appId = import.meta.env.VITE_FIREBASE_APPID;
+// const measurementId = import.meta.env.VITE_FIREBASE_MEASUREMENTID;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBEmWyDdzwP2ulOu3QRxYVVJMRRuFolC2I",
-  authDomain: "market-place-69ae5.firebaseapp.com",
-  projectId: "market-place-69ae5",
-  storageBucket: "market-place-69ae5.appspot.com",
-  messagingSenderId: "966845679678",
-  appId: "1:966845679678:web:c1de227d6c2e82db5d696f",
-  measurementId: "G-F60KTSK2CP"
+  apiKey: EXPO_FIREBASE_KEY,
+  authDomain: EXPO_FIREBASE_DOMAIN,
+  projectId: EXPO_FIREBASE_ID,
+  storageBucket: EXPO_FIREBASE_BUCKET,
+  messagingSenderId: EXPO_FIREBASE_SENDERID,
+  appId: EXPO_FIREBASE_APPID,
+  measurementId: EXPO_FIREBASE_MEASUREMENTID
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
+export const analytics = getAnalytics(app);
