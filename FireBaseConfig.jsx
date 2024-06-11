@@ -9,16 +9,6 @@ import { EXPO_FIREBASE_SENDERID } from '@env'
 import { EXPO_FIREBASE_APPID } from '@env'
 import { EXPO_FIREBASE_MEASUREMENTID } from '@env'
 
-
-
-// const key = import.meta.env.VITE_FIREBASE_KEY;
-// const domain = import.meta.env.VITE_FIREBASE_DOMAIN;
-// const id = import.meta.env.VITE_FIREBASE_ID;
-// const bucket = import.meta.env.VITE_FIREBASE_BUCKET;
-// const senderId = import.meta.env.VITE_FIREBASE_SENDERID;
-// const appId = import.meta.env.VITE_FIREBASE_APPID;
-// const measurementId = import.meta.env.VITE_FIREBASE_MEASUREMENTID;
-
 const firebaseConfig = {
   apiKey: EXPO_FIREBASE_KEY,
   authDomain: EXPO_FIREBASE_DOMAIN,
